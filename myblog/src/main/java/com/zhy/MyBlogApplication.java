@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author zhyocean
+ * @authorbingbing
  */
 @SpringBootApplication
 @EnableTransactionManagement
