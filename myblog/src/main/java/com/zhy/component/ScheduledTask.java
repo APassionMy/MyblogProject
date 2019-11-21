@@ -36,7 +36,7 @@ public class ScheduledTask {
         } else {
             hashRedisService.put("visitor", "yesterdayVisitor", oldTotalVisitor);
         }
-        //将redis中的所有访客记录更新到数据库中
+        //将redis中的所有访客记录更新到数据库中	
         LinkedHashMap map = (LinkedHashMap) hashRedisService.getAllFieldAndValue("visitor");
         String pageName;
         for(Object e : map.keySet()){
