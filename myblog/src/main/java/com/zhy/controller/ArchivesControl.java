@@ -42,8 +42,7 @@ public class ArchivesControl {
      * @return
      */
     @GetMapping("/getArchiveArticle")
-    public JSONObject getArchiveArticle(@RequestParam("archive") String archive,
-                                        HttpServletRequest request){
+    public JSONObject getArchiveArticle(@RequestParam("archive") String archive,HttpServletRequest request){
         try {
             archive = TransCodingUtil.unicodeToString(archive);
         } catch (Exception e){
