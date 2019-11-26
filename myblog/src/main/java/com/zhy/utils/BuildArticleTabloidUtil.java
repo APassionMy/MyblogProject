@@ -44,7 +44,6 @@ public class BuildArticleTabloidUtil {
             } else {
                 break;
             }
-
         }
 
         if(myArticleTabloid.length() > 197){
