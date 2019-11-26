@@ -5,7 +5,7 @@ import net.sf.json.JSONObject;
 import org.springframework.stereotype.Service;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/7/7 15:48
  * Describe: 文章点赞记录业务操作
  */

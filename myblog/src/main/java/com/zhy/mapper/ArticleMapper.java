@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/6/20 21:36
  * Describe: 文章sql
  */

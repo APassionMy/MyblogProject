@@ -3,7 +3,7 @@ package com.zhy.model;
 import lombok.Data;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2019/5/18 17:15
  * Describe: 返回统一的响应格式
  */

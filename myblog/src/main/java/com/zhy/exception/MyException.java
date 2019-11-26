@@ -1,7 +1,7 @@
 package com.zhy.exception;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/8/8 15:50
  * Describe:
  */

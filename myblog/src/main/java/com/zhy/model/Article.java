@@ -4,7 +4,7 @@ import lombok.Data;
 import lombok.Value;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/6/20 15:34
  * Describe: 文章
  */

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.lang.reflect.Field;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2019/5/12 16:10
  * Describe: Hash类型redis操作
  */
@@ -22,7 +22,7 @@ public class HashRedisServiceImpl implements RedisService{
      * 单个设置hash键值对
      */
     public void put(String key, Object field, Object hv){
-        HashOperations<String, Object, Object> vo = redisTemplate.opsForHash();
+        HashOperations<String, Object, Object> vo =redisTemplate.opsForHash();
         vo.put(key, field, hv);
     }
 

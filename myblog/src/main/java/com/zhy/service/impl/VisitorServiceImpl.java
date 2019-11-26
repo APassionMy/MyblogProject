@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/6/16 16:21
  * Describe: 访客实现类
  */

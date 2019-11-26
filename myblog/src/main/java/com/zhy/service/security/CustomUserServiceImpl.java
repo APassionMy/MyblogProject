@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/6/5 19:11
  * Describe: 用户登录处理
  */
@@ -45,7 +45,6 @@ public class CustomUserServiceImpl implements UserDetailsService{
         for(Role role : user.getRoles()){
             authorities.add(new SimpleGrantedAuthority(role.getName()));
         }
-
         return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), authorities);
     }
 }

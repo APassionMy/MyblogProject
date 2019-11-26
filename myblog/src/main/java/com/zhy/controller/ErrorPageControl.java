@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/6/7 17:09
  * Describe: 错误页面跳转
  */

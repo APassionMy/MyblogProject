@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/6/8 9:24
  * Describe: 登录控制
  */

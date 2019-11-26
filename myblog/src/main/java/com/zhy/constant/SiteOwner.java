@@ -1,7 +1,7 @@
 package com.zhy.constant;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/7/27 14:27
  * Describe: 博客网站超级管理员
  */

@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.security.Principal;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/7/15 13:55
  * Describe:
  */

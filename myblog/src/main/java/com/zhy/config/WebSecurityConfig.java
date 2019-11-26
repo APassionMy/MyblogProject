@@ -12,7 +12,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2018/6/5 18:45
  * Describe: SpringSecurity配置
  */
@@ -29,7 +29,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(customUserService())
             //启动MD5加密
-            .passwordEncoder(new PasswordEncoder() {
+            .passwordEncoder(new PasswordEncoder(){
                 MD5Util md5Util = new MD5Util();
                 @Override
                 public String encode(CharSequence rawPassword) {
@@ -44,10 +44,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
     }
 
     @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http
-            .authorizeRequests()
-            .antMatchers("/","/index","/aboutme","/archives","/categories","/friendlylink","/tags","/update")
+    protected void configure(HttpSecurity http) throws Exception{
+        http.authorizeRequests().antMatchers("/","/index","/aboutme","/archives","/categories","/friendlylink","/tags","/update")
                 .permitAll()
                 .antMatchers("/editor","/user","/mylove").hasAnyRole("USER")
                 .antMatchers("/ali").hasAnyRole("ADMIN")

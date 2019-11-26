@@ -3,7 +3,7 @@ package com.zhy.utils;
 import com.zhy.model.Result;
 
 /**
- * @author: zhangocean
+ * @author: shangbing
  * @Date: 2019/5/18 19:13
  * Describe: 返回统一格式封装工具
  */
