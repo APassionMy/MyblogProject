@@ -11,6 +11,14 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class LeaveMessage {
+	
+    public LeaveMessage(String pageName, int answererId, int respondentId, String leaveMessageDate, String leaveMessageContent) {
+        this.pageName = pageName;
+        this.answererId = answererId;
+        this.respondentId = respondentId;
+        this.leaveMessageDate = leaveMessageDate;
+        this.leaveMessageContent = leaveMessageContent;
+    }
 
     private int id;
 
@@ -54,13 +62,15 @@ public class LeaveMessage {
      */
     private int isRead = 1;
 
-    public LeaveMessage(String pageName, int answererId, int respondentId, String leaveMessageDate, String leaveMessageContent) {
-        this.pageName = pageName;
-        this.answererId = answererId;
-        this.respondentId = respondentId;
-        this.leaveMessageDate = leaveMessageDate;
-        this.leaveMessageContent = leaveMessageContent;
-    }
+
+
+	public String getLeaveMessageDate() {
+		return leaveMessageDate;
+	}
+
+	public void setLeaveMessageDate(String leaveMessageDate) {
+		this.leaveMessageDate = leaveMessageDate;
+	}
 
 	public int getId() {
 		return id;
@@ -102,13 +112,6 @@ public class LeaveMessage {
 		this.respondentId = respondentId;
 	}
 
-	public String getLeaveMessageDate() {
-		return leaveMessageDate;
-	}
-
-	public void setLeaveMessageDate(String leaveMessageDate) {
-		this.leaveMessageDate = leaveMessageDate;
-	}
 
 	public int getLikes() {
 		return likes;

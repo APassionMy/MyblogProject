@@ -37,7 +37,7 @@ public interface LeaveMessageMapper {
     @Select("select count(*) from leave_message_record where isRead=1 and respondentId=#{respondentId} and answererId<>#{respondentId}")
     int countIsReadNumByRespondentId(@Param("respondentId") int respondentId);
 
-    @Select("select id,pageName,answererId,leaveMessageDate,leaveMessageContent from leave_message_record order by id desc")
+    @Select("select pageName,answererId,respondentId,leaveMessageDate,leaveMessageContent from leave_message_record order by id desc")
     List<LeaveMessage> findFiveNewLeaveWord();
 
     @Select("select count(*) from leave_message_record")

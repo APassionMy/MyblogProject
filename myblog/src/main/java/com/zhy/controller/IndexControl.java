@@ -84,6 +84,7 @@ public class IndexControl {
     @GetMapping("/newLeaveWord")
     public JSONObject newLeaveWord(@RequestParam("rows") String rows,
                                    @RequestParam("pageNum") String pageNum){
+    	System.out.println(rows+":"+pageNum);
         return leaveMessageService.findFiveNewComment(Integer.parseInt(rows),Integer.parseInt(pageNum));
     }
 

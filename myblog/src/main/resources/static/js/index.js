@@ -167,26 +167,27 @@
         newLeaveWord.empty();
         var listNews = $('<div data-am-widget="list_news" class="am-list-news am-list-news-default" ></div>');
         var newCommentTitle = $('<div class="am-list-news-hd am-cf">' +
-            '<a class="newLeaveWord">' +
-            '<h2 style="color: #110101">最新留言</h2>' +
-            '</a>' +
-            '</div>');
+        						'<a class="newLeaveWord">' +
+        						'<h2 style="color: #110101">最新留言</h2>' +
+        						'</a>' +
+            					'</div>');
         listNews.append(newCommentTitle);
         var amListNewsBd = $('<div class="am-list-news-bd"></div>');
         var ul = $('<ul class="fiveNewComments am-list"></ul>');
+        
         $.each(data['result'], function (index, obj) {
             ul.append($('<li class="am-g am-list-item-dated">' +
-                '<a class="newLeaveWordTitle" href="/' + obj['pagePath'] + '#p' + obj['id'] + '" title="' + obj['leaveWordContent'] + '">' + obj['answerer'] + '：' + obj['leaveWordContent'] + '</a>\n' +
-                '<span class="am-list-date">' + obj['leaveWordDate'] + '</span>' +
-                '</li>'));
+            				'<a class="newLeaveWordTitle" href="/' + obj['pagePath'] + '#p' + obj['respondentId'] + '" title="' + obj['leaveWordContent'] + '">' + obj['answerer'] + '：' + obj['leaveWordContent'] + '</a>\n' +
+            				'<span class="am-list-date">' + obj['leaveWordDate'] + '</span>' +
+                		'</li>'));
         });
         amListNewsBd.append(ul);
         listNews.append(amListNewsBd);
         newLeaveWord.append(listNews);
         newLeaveWord.append($('<div class="my-row" id="page-father">' +
-            '<div class="newLeaveWordPagination">' +
-            '</div>' +
-            '</div>'));
+        						'<div class="newLeaveWordPagination">' +
+        						'</div>' +
+            				'</div>'));
     }
 
     //添加标签云
@@ -240,10 +241,7 @@
         type: 'GET',
         url: '/newComment',
         dataType: 'json',
-        data: {
-            rows:"5",
-            pageNum:currentPage
-        },
+        data: {rows:"5",pageNum:currentPage},
         success: function (data) {
             putInNewComment(data);
 
@@ -261,6 +259,7 @@
 
         },
         error: function () {
+        	//alert("获得文章信息失败！");
         }
     });
 }

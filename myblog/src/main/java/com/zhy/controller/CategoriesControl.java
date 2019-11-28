@@ -52,5 +52,4 @@ public class CategoriesControl {
         return articleService.findArticleByCategory(category, rows, pageNum);
     }
 
-
 }

@@ -12,6 +12,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Tag {
 
+   public Tag(String tagName, int tagSize) {
+        this.tagName = tagName;
+        this.tagSize = tagSize;
+    }
+	
     private int id;
 
     /**
@@ -24,10 +29,7 @@ public class Tag {
      */
     private int tagSize;
 
-    public Tag(String tagName, int tagSize) {
-        this.tagName = tagName;
-        this.tagSize = tagSize;
-    }
+ 
 
 	public int getId() {
 		return id;
