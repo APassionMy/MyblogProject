@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 /**
  * @author: shangbing
  * @Date: 2018/6/5 19:58
- * Describe: MD5加密工具
+ * Describe: MD5加密
  */
 public class MD5Util {
 
