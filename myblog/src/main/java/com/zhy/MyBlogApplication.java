@@ -27,7 +27,9 @@ public class MyBlogApplication {
 		SpringApplication.run(MyBlogApplication.class, args);
 	}
 
-//	配置http自动转向https
+	/**
+	 * 配置http自动转向https
+	 */
 //	@Component
 //	public static class CustomServletContainer implements EmbeddedServletContainerCustomizer {
 //
