@@ -36,9 +36,11 @@ public class CustomUserServiceImpl implements UserDetailsService{
         if(user == null){
             throw  new UsernameNotFoundException("用户不存在");
         }
-
+        //时间格式化工具
         TimeUtil timeUtil = new TimeUtil();
+        //得到年月日时分秒
         String recentlyLanded = timeUtil.getFormatDateForSix();
+        //跟新用户最近登录时间
         userService.updateRecentlyLanded(user.getUsername(), recentlyLanded);
         List<SimpleGrantedAuthority> authorities = new ArrayList<>();
 

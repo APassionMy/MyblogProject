@@ -32,7 +32,7 @@
     var loginFormSubmit = $("#loginFormSubmit");
     var password = $("#password");
     var password_null = $("#password_null");
-    loginFormSubmit.click(function () {
+    loginFormSubmit.click(function (){
         var password_len = password.val().length;
         var phone_len = phone.val().length;
         var phone_value = phone.val();

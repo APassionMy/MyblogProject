@@ -22,6 +22,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
     @Bean
     UserDetailsService customUserService(){
+    	//登录处理
         return new CustomUserServiceImpl();
     }
 
