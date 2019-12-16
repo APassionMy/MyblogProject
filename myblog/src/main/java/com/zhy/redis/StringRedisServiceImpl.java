@@ -55,7 +55,7 @@ public class StringRedisServiceImpl implements RedisService{
     /**
      * 设置key的超时时间(秒)
      */
-    public Boolean expire(String key, long timeout) {
+    public Boolean expire(String key, long timeout){
         return redisTemplate.expire(key, timeout, TimeUnit.SECONDS);
     }
 

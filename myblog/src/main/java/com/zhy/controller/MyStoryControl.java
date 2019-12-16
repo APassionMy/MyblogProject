@@ -21,7 +21,6 @@ public class MyStoryControl {
     @GetMapping("/getMyStory")
     public JSONObject getMyStory(@RequestParam("rows") String rows,
                                  @RequestParam("pageNum") String pageNum){
-        return articleService.findArticleByCategory("我的故事",Integer.parseInt(rows), Integer.parseInt(pageNum));
+        return articleService.findArticleByCategory("我的故事",Integer.parseInt(rows),Integer.parseInt(pageNum));
     }
-
 }
