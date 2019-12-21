@@ -1,12 +1,10 @@
 package com.zhy.constant;
-
 /**
  * @author: shangbing
  * @Date: 2018/6/9 19:45
  * Describe: 阿里云连接密钥
  */
 public class OSSClientConstants {
-
     /**
      * 阿里云API的外网域名
      */
@@ -26,7 +24,6 @@ public class OSSClientConstants {
      * 在阿里云上自己创建一个bucket
      */
     public static final String BACKET_NAME = "zhy-myblog";
-
     /**
      * 阿里云API的文件夹名称
      * 在阿里云上自己创建一个文件夹，方便分类管理图片
