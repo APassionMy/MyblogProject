@@ -82,7 +82,7 @@ public class AliYunOSSClientUtil {
 
 
     /**
-     * 创建模拟文件夹
+          * 创建模拟文件夹
      * @param ossClient oss连接
      * @param bucketName 存储空间
      * @param folder   模拟文件夹名如"qj_nanjing/"
@@ -105,7 +105,7 @@ public class AliYunOSSClientUtil {
     }
 
     /**
-     * 根据key删除OSS服务器上的文件
+          * 根据key删除OSS服务器上的文件
      * @param ossClient  oss连接
      * @param bucketName  存储空间
      * @param folder  模拟文件夹名 如"qj_nanjing/"
@@ -117,7 +117,7 @@ public class AliYunOSSClientUtil {
     }
 
     /**
-     * 上传图片至OSS
+          * 上传图片至OSS
      * @param ossClient  oss连接
      * @param file 上传文件（文件全路径如：D:\\image\\cake.jpg）
      * @param bucketName  存储空间

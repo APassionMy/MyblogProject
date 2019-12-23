@@ -33,6 +33,7 @@ public class TagsControl {
     @PostMapping("/getTagArticle")
     public JSONObject getTagArticle(@RequestParam("tag") String tag,
                                     HttpServletRequest request){
+    	System.out.println("asda");
         try {
             tag = TransCodingUtil.unicodeToString(tag);
         } catch (Exception e){
@@ -45,5 +46,4 @@ public class TagsControl {
             return articleService.findArticleByTag(tag, rows, pageNum);
         }
     }
-
 }

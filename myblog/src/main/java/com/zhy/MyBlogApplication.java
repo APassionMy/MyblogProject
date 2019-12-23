@@ -24,7 +24,9 @@ import java.util.concurrent.TimeUnit;
 public class MyBlogApplication {
 
 	public static void main(String[] args) {
+		
 		SpringApplication.run(MyBlogApplication.class, args);
+		
 	}
 
 	/**
