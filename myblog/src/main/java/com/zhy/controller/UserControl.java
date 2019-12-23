@@ -42,7 +42,8 @@ public class UserControl {
      * 上传头像
      */
     @PostMapping("/uploadHead")
-    public JSONObject uploadHead(HttpServletRequest request,@AuthenticationPrincipal Principal principal){
+    public JSONObject uploadHead(HttpServletRequest request,
+                                 @AuthenticationPrincipal Principal principal){
         String username;
         try {
             username = principal.getName();
